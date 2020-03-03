@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление животного</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" name="addanimal" action="#" method="post"><!-- enctype - для загрузки любых файлов куда и как отправляются action и post -->
+    <p>Форма добавления животного</p>
+        <div>
+            <label for="name">Имя животного</label>
+            <input minlength="2" maxlenght="10" required id="name" type="text"name="animalname" placeholder="Имя" value="?"> <!-- value - текущее значение по инпуту required - обязательно для заполнения -->
+        </div>
+        <div>
+            <label for="age">Возраст</label>
+            <input id="age" name="age" type="number" min="0" max="30">
+        </div>
+        <div>
+            <label for="textarea1">Описание животного</label>
+            <textarea minlenght="20" id="textarea1" name="textarea1"></textarea>
+        </div>
+        <div>
+            <!-- <input type="file" name="photo"> --> <!-- загрузка одного файла -->
+            <label for="photo">Фотографии</label>
+            <input id="photo" multiple accept="image/*" type="file" name="photo[]"> <!-- загрузка нескольких файлом -->
+        </div>
+        <div>
+            <label for="birth">Дата рождения</label>
+            <input id="birth" name="birth" type="date>"
+        </div>
+        <div>
+            <legend>Цвет питомца</legend>
+            <input value="black" name="colour" type="radio">
+            Черный
+            <input value="white" name="colour" type="radio">
+            Белый
+            <input value="red" name="colour" type="radio">
+            Красный
+        </div>
+        <div>
+            <legend>Пол питомца</legend>
+            <input value="male" name="gender" type="radio">
+            Мальчик
+            <input value="female" name="gender" type="radio">
+            Девочка
+        </div>
+        <fieldset> <!-- для группировки элементов -->
+            <legend>Что за покемон?</legend>
+            <label for="category">Найди своего покемона</label> <!-- текстовая метка для элементов -->
+            <select required name="category" id="category" size="2"> <!-- id - должен быть уникальным, multiple - множественный выбор, size="2" - сколько элементов списка отображается в браузере -->
+                <option value="cat">Кошка</option> <!-- инфа для сервера, а именно атрибуты -->
+                <option value="dog">Собака</option>
+                <option value="edinorog">Единорог</option>
+                <option value="tiger">Бенгальский тигр</option>
+            </select> <!-- выпадающий список-->
+        </fieldset>
+    </form>
+</body>
+</html>
