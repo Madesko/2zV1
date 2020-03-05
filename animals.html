@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Животные | Кошки</title>
+    <link rel="stylesheet" href="css/animals.css"> <!-- подключение стилей -->
 </head>
 <body>
 <header><!-- верхняя часть страницы: меню, логотип и т.д.-->
@@ -29,7 +30,7 @@
             </li>
         </ul>
     </nav>
-    <div><!-- Тег-контейнер не семантический -->
+    <div class="findfriend"><!-- Тег-контейнер не семантический -->
         <p>Найти друга <!-- тег <p> текстовый абзац --></p>
         <p>+7(999)434-34-34</p>
     </div>
@@ -57,16 +58,16 @@
         </nav>
     </section>
 </footer>
-<main><!-- основной контент, важная инфа -->
+<main class="container"><!-- основной контент, важная инфа -->
     <h1>Кошки</h1>
     <article>
         <h1>Кошка Люся
-            <a href="#">Забрать домой</a>
+            <a class="take-home" href="#">Забрать домой</a>
         </h1>
         <div>
             <div>
                 <a href="cat.html">
-                    <img src="images/TipoKot.jpg" alt="Люся" width="192" height="263"> <!-- вывод изображения, для картинок создать отдельную папку -->
+                    <img src="images/TipoKot.jpg" alt="Люся"> <!-- вывод изображения, для картинок создать отдельную папку -->
                 </a>
             </div>
             <div>
@@ -83,13 +84,15 @@
         </div>
     </article>
     <article>
-        <h1>Кошка Люся
-            <a href="#">Забрать домой</a>
+        <h1 class="LyusyaCat">Кошка Люся
+            <a class="take-home" href="#">Забрать домой</a>
         </h1>
         <div>
-            <div>
+            <div class="animal-photo">
                 <a href="cat.html">
-                    <img src="images/TipoKot.jpg" alt="Люся" width="192" height="263"> <!-- вывод изображения, для картинок создать отдельную папку -->
+                    <img src="images/TipoKot.jpg" alt="Люся"> <!-- вывод изображения, для картинок создать отдельную папку -->
+                 <q>Lorem ipsum dolor sit amet.
+                 </q>
                 </a>
             </div>
             <div>
@@ -107,5 +110,7 @@
     </article>
 </main>
 <!-- элементы которые хотим разместить на странице в браузере -->
+<div class="upbutton">
+</div>
 </body>
 </html>

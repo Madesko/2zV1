@@ -1,0 +1,24 @@
+/* Коммент */
+/*уникальные стили для страницы*/
+/*стили для animals.css*/
+@import "style.css"; /* подключение css файла*/
+/*селектор тега*/
+.animal-photo {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* селектор потомка*/
+.animal-photo q {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: antiquewhite;
+}
+
+.take-home {
+    padding: 10px 20px;
+    background: cyan;
+    color: fuchsia;
+    border-radius: 10px;
+}

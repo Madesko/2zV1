@@ -1,0 +1,11 @@
+.fieldset {
+    border: 1px solid cyan;
+}
+
+input [type] /* применение ко всем, у которых есть атрибут type или у которых type в значении submit [type="submit"]*/
+{
+    border: 0;
+    padding: 5px 15px;
+    border-raius: 5px;
+    background: orange;
+}
