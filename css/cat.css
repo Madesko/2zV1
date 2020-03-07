@@ -1,0 +1,23 @@
+@import "style.css";
+
+body {
+    display: grid;
+    grid-template-areas: "header_area header_area header_area"
+    "main_area main_area main_area"
+    "footer_area footer_area footer_area";
+    /* определяем колонки сетки*/
+    grid-template-columns: 1fr minmax(500px, 1000px) 1fr;
+    grid-template-rows: auto auto auto;
+}
+header {
+    grid-area: header_area;
+}
+aside {
+    grid-area: header_area;
+}
+#some_block {
+    grid-area: some_block;
+}
+main {
+    grid-area: main_area;
+}
