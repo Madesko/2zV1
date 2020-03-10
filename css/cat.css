@@ -21,3 +21,7 @@ aside {
 main {
     grid-area: main_area;
 }
+
+.take-home {
+    margin-left: auto;
+}

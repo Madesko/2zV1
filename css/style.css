@@ -1,4 +1,7 @@
 /* селектор тега*/
+* {
+    box-sizing: border-box; /* чтобы бордер и паддинг входили в ширину или высоту */
+}
 body {
     /* свойство: значение*/
     background: whitesmoke;
@@ -47,3 +50,7 @@ ul {
     background: cyan;
     border-radius: 50%;
 }
+.content-center {
+    text-align: center;
+}
+

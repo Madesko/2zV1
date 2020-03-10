@@ -22,3 +22,13 @@
     color: fuchsia;
     border-radius: 10px;
 }
+
+.LyusyaCat {
+    display: flex;
+    order:1 ;
+}
+.take-home {
+    display: flex;
+    order: 2;
+    margin-left: auto;
+}
